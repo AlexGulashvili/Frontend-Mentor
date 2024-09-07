@@ -78,9 +78,9 @@ body{
     float: left;
     margin-right: 12px;
 }
-.author #small-bald {
+#small-bold {
     float: right;
-    font-weight: 700;
+    font-weight: 900;
 }
 .author{
     display:flex;
