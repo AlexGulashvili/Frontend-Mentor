@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-family: 'Figtree';
+}
+body{
+    background-color: #f4d04e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    width: 384px;
+    height: 522px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 10px 10px rgb(0, 0, 0);
+    outline: black solid 1px;
+    margin: 24px;
+}
+.img{
+    width: 336px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 24px;
+    vertical-align: top;
+}
+.card-text{
+    vertical-align: top;
+    margin:0px 24px;
+}
+.preset-1{
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #111111;
+}
+.preset-2{
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: rgb(107, 107, 107);
+}
+.preset-3{
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    color: #111111;
+}
+#yellow-box{
+    background-color: #f4d04e;
+    width: 85px;
+    height: 29px;
+    border-radius: 4px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#medium-small{
+    margin-top: 12px;
+}
+#extra-bold{
+    font-weight: 900;
+    margin-top: 12px;
+    font-weight: bolder;
+}
+#medium{
+    margin-top: 12px;
+}
+.author img{ 
+    float: left;
+    margin-right: 12px;
+}
+.author #small-bald {
+    float: right;
+    font-weight: 700;
+}
+.author{
+    display:flex;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 24px
+}
+.avatar{
+    width: 32px;
+}
+#extra-bold:hover{
+    color:#f4d04e;
+    cursor: pointer;
+}
