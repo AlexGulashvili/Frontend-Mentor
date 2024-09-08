@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+html{
+    font-family: 'Heebo';
+}
+body{
+    background-color: #131313;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+}
+.container{
+    color: #ffffff;
+    background-color: #1e1e1e;
+    border-radius: 20px;
+    text-align: center;
+    width: 384px;
+    height: 613px;
+}
+img{
+    border-radius: 50%;
+    margin: 24px 145px 24px 145px;
+    width: 96px;
+}
+.name{
+    font-size: 24px;
+    font-weight: 700;
+}
+.address{
+    margin-top: 12px;
+    color: #90ab45;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.work{
+    color: #696969;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.link{
+    background-color: #323232;
+    width: 304px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
