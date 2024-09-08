@@ -53,4 +53,11 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    color: #ffffff;
+}
+.link:hover{
+    color: black;
+    background-color: white;
+
 }
