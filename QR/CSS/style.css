@@ -34,6 +34,9 @@ body{
     margin: 16px 16px 40px 16px;
     text-align: center;
 }
+.text{
+    vertical-align: top;
+}
 .bold{
     font-size: 22px;
     line-height: 120%;
