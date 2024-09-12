@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+body .card {
+  background-color: hsl(0, 0%, 100%);
+  width: 600px;
+  height: 450px;
+  border-radius: 10px;
+}
+body .card img {
+  float: left;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: 32px;
+}
+body .card .text .title {
+  letter-spacing: 6px;
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  margin-top: 32px;
+}
+body .card .text h1 {
+  font-size: 37px;
+  margin-top: 16px;
+  font-weight: 700;
+  font-family: "Fraunces";
+  color: hsl(212, 21%, 14%);
+  line-height: 34px;
+}
+body .card .text .description {
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+  margin-top: 28px;
+  font-size: 14px;
+  margin-right: 32px;
+}
+body .card .text .price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body .card .text .price .new,
+body .card .text .price .old {
+  margin: 0;
+  margin-top: 30px;
+}
+body .card .text .price .new {
+  font-size: 30px;
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces";
+  margin-right: 10px;
+}
+body .card .text .price .old {
+  font-family: "Montserrat";
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  text-decoration: line-through;
+}
+body .card .text button {
+  cursor: pointer;
+  background-color: hsl(158, 36%, 37%);
+  width: 236px;
+  height: 48px;
+  border: none;
+  border-radius: 10px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 26px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+body .card .text button img {
+  width: 16px;
+  height: auto;
+  border-radius: 0;
+}
+
+@media (max-width: 375px) {
+  body .card {
+    height: auto;
+    margin: 28px 16px;
+  }
+  body .card picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0;
+  }
+  body .card .text {
+    padding: 24px;
+  }
+  body .card .text .title {
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 240px;
+  }
+  body .card .text h1 {
+    font-size: 35px;
+    font-weight: 700;
+  }
+  body .card .description {
+    line-height: 20px;
+  }
+  body .card button {
+    min-width: 295px;
+    min-height: 48px;
+  }
+}/*# sourceMappingURL=style.css.map */

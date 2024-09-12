@@ -1,0 +1,149 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+$dark-cyan: hsl(158, 36%, 37%);
+$cream: hsl(30, 38%, 92%);
+$very-dark-blue: hsl(212, 21%, 14%);
+$dark-grayish-blue: hsl(228, 12%, 48%);
+$white: hsl(0, 0%, 100%);
+
+$fraunces: "Fraunces";
+$montserrat: "Montserrat";
+
+body {
+  background-color: $cream;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  .card {
+    background-color: $white;
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+
+    img {
+      float: left;
+      width: 300px;
+      height: 450px;
+      border-radius: 10px 0px 0px 10px;
+      margin-right: 32px;
+    }
+    .text {
+      .title {
+        letter-spacing: 6px;
+        font-family: $montserrat;
+        color: $dark-grayish-blue;
+        text-transform: uppercase;
+        margin-top: 32px;
+      }
+
+      h1 {
+        font-size: 37px;
+        margin-top: 16px;
+        font-weight: 700;
+        font-family: $fraunces;
+        color: $very-dark-blue;
+        line-height: 34px;
+      }
+
+      .description {
+        font-family: $montserrat;
+        color: $dark-grayish-blue;
+        margin-top: 28px;
+        font-size: 14px;
+        margin-right: 32px;
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .new,
+        .old {
+          margin: 0;
+          margin-top: 30px;
+        }
+
+        .new {
+          font-size: 30px;
+          color: $dark-cyan;
+          font-family: "Fraunces";
+          margin-right: 10px;
+        }
+
+        .old {
+          font-family: "Montserrat";
+          color: $dark-grayish-blue;
+          font-size: 14px;
+          text-decoration: line-through;
+        }
+      }
+
+      button {
+        cursor: pointer;
+        background-color: $dark-cyan;
+        width: 236px;
+        height: 48px;
+        border: none;
+        border-radius: 10px;
+        color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 26px;
+        font-weight: 700;
+        margin-bottom: 32px;
+
+        img {
+          width: 16px;
+          height: auto;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  body {
+    .card {
+      height: auto;
+      margin: 28px 16px;
+      picture {
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px 10px 0px 0px;
+          margin: 0;
+        }
+      }
+      .text {
+        padding: 24px;
+        .title {
+          font-size: 16px;
+          letter-spacing: 2px;
+          margin-top: 240px;
+        }
+        h1 {
+          font-size: 35px;
+          font-weight: 700;
+        }
+      }
+      .description {
+        line-height: 20px;
+      }
+      button {
+        min-width: 295px;
+        min-height: 48px;
+      }
+    }
+  }
+}
